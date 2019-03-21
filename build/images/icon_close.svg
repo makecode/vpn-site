@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Menu - Close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Menu---Close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hamburger">
+            <polygon id="Fill-1-Copy" points="0 16 16 16 16 0 0 0"></polygon>
+            <path d="M1,8 L15,8" id="Path-4-Copy-2" stroke="#182638" stroke-width="1.5" stroke-linecap="round" transform="translate(8.000000, 8.000000) rotate(45.000000) translate(-8.000000, -8.000000) "></path>
+            <path d="M1,8 L15,8" id="Path-4-Copy-2" stroke="#182638" stroke-width="1.5" stroke-linecap="round" transform="translate(8.000000, 8.000000) scale(-1, 1) rotate(45.000000) translate(-8.000000, -8.000000) "></path>
+        </g>
+    </g>
+</svg>

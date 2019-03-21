@@ -1,0 +1,51 @@
+-
+  const featuresOne = [
+    'Military-grade encryption',
+    '90 servers in 15 locations',
+    'No restrictions',
+    'DNS'
+  ]
+  const featuresTwo = [
+    'Strict no-logs policy',
+    'Streaming optimized servers',
+    '256-bit AES encryption',
+    'Kill switch'
+  ]
+  
+  const featuresThree = [
+    'Lightning speeds',
+    'Protect up to 3 devices',
+    'Unlimited bandwidth',
+    'Split tunneling'
+  ]
+
+  const featuresFour = [
+    'P2P optimized',
+    '24/7 assistance',
+    'IPv6 leak protection',
+    'Double VPN'
+  ]
+
+div.pre-footer
+  div.pre-footer__wrap.container
+    h3.pre-footer__title Get SafeLine VPN
+    p.pre-footer__sub-title With SafeLine VPN you get:
+
+    div.features
+      ul.features__list
+        each el in featuresOne
+          li.features__el= el
+
+      ul.features__list
+        each el in featuresTwo
+          li.features__el= el
+
+      ul.features__list
+        each el in featuresThree
+          li.features__el= el
+
+      ul.features__list
+        each el in featuresFour
+          li.features__el= el
+
+    include buttons

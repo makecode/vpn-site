@@ -1,0 +1,26 @@
+.features
+  display: flex
+  flex-direction: row
+  width: 100%
+
+  &__list
+    display: flex
+    flex-direction: column
+    width: 25%
+    text-align-last: left
+
+  &__el
+    position: relative
+    padding-left: 30px
+    margin-bottom: 20px
+
+  &__el::after
+    position: absolute
+    content: ''
+    top: 2px
+    left: 0
+    width: 20px
+    height: 20px
+    background-image: url('~media/check.svg')
+    background-size: cover
+

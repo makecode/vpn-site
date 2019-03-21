@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Feature Icon - Lightning</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Feature-Icon---Lightning" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3">
+            <polygon id="Fill-1" points="0 24 24 24 24 0 0 0"></polygon>
+            <path d="M3.8322,15 L10.9432,15 L10.0182,24 L20.1672,9 L12.9992,9 L13.7452,0 L3.8322,15 Z M11.1082,7.619 L11.0072,8.835 L10.8282,11 L12.9992,11 L16.4002,11 L12.8202,16.289 L12.9322,15.204 L13.1592,13 L10.9432,13 L7.5512,13 L11.1082,7.619 Z" id="Fill-2" fill="#2580E5"></path>
+        </g>
+    </g>
+</svg>

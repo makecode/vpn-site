@@ -1,0 +1,15 @@
+-
+ const superiorities = [
+   { title: 'Stay secure online, anywhere', descr: 'Browse anonymously with a hidden IP, and enable Wi-Fi security with 256-bit encryption to protect you from hackers, snoopers, data thieves, Wi-Fi hackers and even government surveillance.' },
+   { title: 'Keep your data private', descr: 'Your online activity will be encrypted with the 256-AES bit technology, the most efficient out there. Thus, nobody will be able to sneak a peek into your private conversations or sensitive data.' },
+   { title: 'Enjoy the internet with no restrictions', descr: 'Access certain sites from your university or workplace, stream your favorite online TV shows while abroad or freely browse censored or geo-restricted content.' }
+ ];
+
+section.section.superiorities.container
+  div.figure-group
+    each item in superiorities
+      figure.figure
+        div.figure__icon
+        figcaption.figure__text
+          dt.figure__strong= item.title
+          dd.figure__regular= item.descr

@@ -1,0 +1,32 @@
+.detection
+  height: 36px
+  line-height: 36px
+  background-color: #182638
+  color: white
+  text-align: center
+  font-size: 14px
+
+  &__status
+    text-transform: uppercase
+    color: #ff992b
+
+  &__link
+    position: relative
+    margin-left: 20px
+    color: #2580e5
+
+  &__link::after
+    position: absolute
+    content: ''
+    top: 2px
+    left: -20px
+    width: 16px
+    height: 16px
+    background-image: url('~media/arrow-right.svg')
+
+  &__link:hover
+    color: #348ff3
+    text-decoration: underline
+
+  &__link:hover::after
+    background-image: url('~media/arrow-right-hover.svg')

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Menu Icon - About</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Menu-Icon---About" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-9">
+            <polygon id="Fill-1" points="0 24 24 24 24 0 0 0"></polygon>
+            <g id="Group-8" transform="translate(1.500000, 1.500000)" fill="#182638">
+                <path d="M10.5,1.7173 C5.657,1.7173 1.7175,5.6573 1.7175,10.4998 C1.7175,15.3428 5.657,19.2828 10.5,19.2828 C15.343,19.2828 19.2825,15.3428 19.2825,10.4998 C19.2825,5.6573 15.343,1.7173 10.5,1.7173 M10.5,20.7173 C4.866,20.7173 0.2825,16.1338 0.2825,10.4998 C0.2825,4.8663 4.866,0.2828 10.5,0.2828 C16.134,0.2828 20.7175,4.8663 20.7175,10.4998 C20.7175,16.1338 16.134,20.7173 10.5,20.7173" id="Fill-2"></path>
+                <path d="M11.5,5.5 C11.5,4.948 11.052,4.5 10.5,4.5 C9.948,4.5 9.5,4.948 9.5,5.5 C9.5,6.052 9.948,6.5 10.5,6.5 C11.052,6.5 11.5,6.052 11.5,5.5" id="Fill-4"></path>
+                <path d="M10.5,16.5 C10.0855,16.5 9.75,16.1645 9.75,15.75 L9.75,9.25 C9.75,8.8355 10.0855,8.5 10.5,8.5 C10.9145,8.5 11.25,8.8355 11.25,9.25 L11.25,15.75 C11.25,16.1645 10.9145,16.5 10.5,16.5" id="Fill-6"></path>
+            </g>
+        </g>
+    </g>
+</svg>

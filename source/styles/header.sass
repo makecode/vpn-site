@@ -1,0 +1,31 @@
+.header
+  position: absolute
+  top: 36px
+  left: 0
+  height: 72px
+  width: 100%
+  transition: $transition
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+
+.header.hidden
+  opacity: 0
+  top: 0
+
+.header.fixed
+  top: 0
+  position: fixed
+  background-color: white
+  z-index: 1000
+  opacity: 1
+
+.header.hidden,
+.header.fixed
+  .navigation__link:last-child
+    display: none
+  .navigation__button
+    display: inline-block

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Attention - White</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Attention---White" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M8,13 C7.448,13 7,12.552 7,12 C7,11.448 7.448,11 8,11 C8.552,11 9,11.448 9,12 C9,12.552 8.552,13 8,13 Z M7.25,3.6565 C7.25,3.2935 7.5855,3 8,3 C8.4145,3 8.75,3.2935 8.75,3.6565 L8.75,9.344 C8.75,9.7065 8.4145,10 8,10 C7.5855,10 7.25,9.7065 7.25,9.344 L7.25,3.6565 Z M8,0 C3.589,0 0,3.589 0,8 C0,12.411 3.589,16 8,16 C12.411,16 16,12.411 16,8 C16,3.589 12.411,0 8,0 Z" fill="#FFFFFF"></path>
+    </g>
+</svg>

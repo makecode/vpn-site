@@ -1,0 +1,19 @@
+-
+  const navigation = [
+    { title: 'Pricing', link: '#' },
+    { title: 'Download', link: '#' },
+    { title: 'Help', link: '#' },
+    { title: 'English', link: '#' },
+  ]
+
+header.header#header
+  div.header__wrap.container
+    div.logo
+      a.logt__link(href='#')
+      img(src=require('./../../media/logo.svg')).logo_img
+
+    nav.navigation
+      each el in navigation
+        a.navigation__link(href= el.link)= el.title
+
+      a.navigation__button(href='#') Get SafeLine VPN

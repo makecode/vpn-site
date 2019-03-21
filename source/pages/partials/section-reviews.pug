@@ -1,0 +1,43 @@
+-
+  const reviews = [
+    {
+      text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”',
+      author: 'Aaron Ford',
+      date: 'Apr 28, 2017'
+    },
+    {
+      text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”',
+      author: 'Mowgz Real',
+      date: 'Mar 06, 2019'
+    },
+    {
+      text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”',
+      author: 'Ruth Elliott',
+      date: 'Jun 22, 2018'
+    }
+  ];
+
+section.section.feedback
+  div.feedback__wrap.container
+    div.feedback__title What our customers say
+    p.feedback__sub-title We care what our customers think of us and so should you.
+
+    div.reviews
+      each item in reviews
+        div.review
+          div.reviews__raiting
+            span.icon.star
+            span.icon.star
+            span.icon.star
+            span.icon.star
+            span.icon.star
+
+          p.review__text= item.text
+
+          span.review__name= item.author
+          span.review__date= item.date
+
+    div.feedback__total 
+      span Rated 9.5 out of 10 based
+      a(href='#') &nbsp;256 reviews&nbsp;
+      span on on ShopperApproved.

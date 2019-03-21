@@ -1,0 +1,52 @@
+-
+  const footerColOne = [
+    { title: 'Get Safeline VPN', link: '#' },
+    { title: 'Download', link: '#' },
+    { title: 'Features', link: '#' },
+    { title: 'Pricing', link: '#' },
+    { title: 'Help', link: '#' }
+  ]
+  
+  const footerColTwo = [
+    { title: 'Mac', link: '#' },
+    { title: 'How to Uninstall', link: '#' }
+  ]
+
+  const footerColThree = [
+    { title: 'Blog', link: '#' },
+    { title: 'About Us', link: '#' },
+    { title: 'Affiliate', link: '#' },
+    { title: 'Privacy Policy', link: '#' },
+    { title: 'Terms of Service', link: '#' }
+  ]
+
+footer.footer
+  div.footer__wrap.container
+    div.footer__top
+      div.footer__col
+        h5.footer__title SafeLine VPN
+        ul.footer__list
+          each el in footerColOne
+            li.footer__el
+              a.footer__link(href= el.link)= el.title
+
+      div.footer__col
+        h5.footer__title Apps
+        ul.footer__list
+          each el in footerColTwo
+            li.footer__el
+              a.footer__link(href= el.link)= el.title
+
+      div.footer__col
+        h5.footer__title Company
+        ul.footer__list
+          each el in footerColThree
+            li.footer__el
+              a.footer__link(href= el.link)= el.title
+
+      div.footer__col
+        h5.footer__title Follow Us
+        include social
+
+    div.footer__bottom
+      div.copyright © 2019 Rello Labs Ltd.
