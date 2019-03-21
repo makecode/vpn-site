@@ -8,16 +8,16 @@
   ]
   
   const footerColTwo = [
-    { title: 'Mac', link: '#' },
-    { title: 'How to Uninstall', link: '#' }
-  ]
-
-  const footerColThree = [
     { title: 'Blog', link: '#' },
     { title: 'About Us', link: '#' },
     { title: 'Affiliate', link: '#' },
     { title: 'Privacy Policy', link: '#' },
     { title: 'Terms of Service', link: '#' }
+  ]
+
+  const footerColThree = [
+    { title: 'Mac', link: '#' },
+    { title: 'How to Uninstall', link: '#' }
   ]
 
 footer.footer
@@ -31,14 +31,14 @@ footer.footer
               a.footer__link(href= el.link)= el.title
 
       div.footer__col
-        h5.footer__title Apps
+        h5.footer__title Company
         ul.footer__list
           each el in footerColTwo
             li.footer__el
               a.footer__link(href= el.link)= el.title
 
       div.footer__col
-        h5.footer__title Company
+        h5.footer__title Apps
         ul.footer__list
           each el in footerColThree
             li.footer__el

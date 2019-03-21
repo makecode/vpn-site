@@ -10,6 +10,10 @@
     justify-content: space-between
     width: 100%
 
+    +m(900)
+      flex-wrap: wrap
+      padding-bottom: 0
+
   &__top::after
     position: absolute
     content: ''
@@ -22,6 +26,10 @@
 
   &__col
     width: 25%
+
+    +m(900)
+      width: 50%
+      margin-bottom: 30px
 
   &__title
     margin-bottom: 20px

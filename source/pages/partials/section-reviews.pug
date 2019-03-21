@@ -22,7 +22,7 @@ section.section.feedback
     div.feedback__title What our customers say
     p.feedback__sub-title We care what our customers think of us and so should you.
 
-    div.reviews
+    div.reviews.glider
       each item in reviews
         div.review
           div.reviews__raiting
@@ -36,8 +36,5 @@ section.section.feedback
 
           span.review__name= item.author
           span.review__date= item.date
-
-    div.feedback__total 
-      span Rated 9.5 out of 10 based
-      a(href='#') &nbsp;256 reviews&nbsp;
-      span on on ShopperApproved.
+    div.dots#dots
+    div.feedback__total Rated 9.5 out of 10 based <a class='link' href='#'>256 reviews</a> on on ShopperApproved.

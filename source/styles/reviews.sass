@@ -5,11 +5,16 @@
   justify-content: space-between
 
 .review
+  margin: 40px 0
   padding: 40px 30px
   width: 370px
   background: white
   text-align: center
   color: #182638
+
+  +m(1200)
+    width: 32%
+    margin: 20px 0
 
   &__text
     display: block
@@ -21,3 +26,18 @@
 
   &__date
     opacity: 0.5
+
+#dots
+  margin-bottom: 10px
+
+  .glider-dot
+    width: 20px
+    height: 2px
+    border-radius: 0
+
+  .glider-dot.active
+    background-color: #2580e5
+
+.glider::-webkit-scrollbar,
+.glider::-webkit-scrollbar-thumb
+  display: none

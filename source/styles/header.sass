@@ -4,7 +4,6 @@
   left: 0
   height: 72px
   width: 100%
-  transition: $transition
 
   &__wrap
     display: flex
@@ -12,16 +11,12 @@
     align-items: center
     height: 100%
 
-.header.hidden
-  opacity: 0
-  top: 0
-
 .header.fixed
   top: 0
   position: fixed
   background-color: white
   z-index: 1000
-  opacity: 1
+  opacity: 0.95
 
 .header.hidden,
 .header.fixed

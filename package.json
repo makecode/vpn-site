@@ -10,6 +10,7 @@
     "babel-preset-env": "^1.6.1",
     "css-loader": "0.28.7",
     "file-loader": "1.1.5",
+    "glider-js": "^1.6.5",
     "html-webpack-plugin": "2.30.1",
     "i18next": "^11.2.3",
     "i18next-browser-languagedetector": "^2.2.0",

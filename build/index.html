@@ -28,7 +28,43 @@
 </ul>
 <div class="buttons"><a class="button" href="#">Get SafeLine VPN</a><a class="link" href="#">Start Free Trial</a></div>
     <div class="hero__screen"><img src="images/screen.png"></div>
-  </div>
+  </div><svg class='hero__vawes' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
+    height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+    <defs>
+      <path id="wave-one" stroke="#2580E5" stroke-width="2" fill="none" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+      
+      <path id="wave-two" stroke="#FCAA51" stroke-width="2" fill="none" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+      
+      <path id="wave-three" stroke="#5FD6A1" stroke-width="2" fill="none" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+    
+      <path id="wave-four" stroke="#7B85FF" stroke-width="2" fill="none" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+    s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />    
+    </defs>
+    <g>
+      <use xlink:href='#wave-one'>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="10s" calcMode="spline"
+          values="270 230; -334 180; 270 230" keyTimes="0; .5; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+      </use>
+      <use xlink:href='#wave-two'>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s" calcMode="spline"
+          values="-270 230;243 220;-270 230" keyTimes="0; .6; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+      </use>
+      <use xlink:href='#wave-three'>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s" calcMode="spline"
+          values="0 230;-140 200;0 230" keyTimes="0; .4; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+      </use>
+      <use xlink:href='#wave-four'>
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="12s" calcMode="spline" values="0 240;140 200;0 230"
+          keyTimes="0; .4; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+      </use>
+    </g>
+  </svg>
 </section>
 <section class="section superiorities container">
   <div class="figure-group">
@@ -59,7 +95,7 @@
   <div class="feedback__wrap container">
     <div class="feedback__title">What our customers say</div>
     <p class="feedback__sub-title">We care what our customers think of us and so should you.</p>
-    <div class="reviews">
+    <div class="reviews glider">
       <div class="review">
         <div class="reviews__raiting"><span class="icon star"></span><span class="icon star"></span><span class="icon star"></span><span class="icon star"></span><span class="icon star"></span></div>
         <p class="review__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p><span class="review__name">Aaron Ford</span><span class="review__date">Apr 28, 2017</span>
@@ -73,7 +109,8 @@
         <p class="review__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p><span class="review__name">Ruth Elliott</span><span class="review__date">Jun 22, 2018</span>
       </div>
     </div>
-    <div class="feedback__total"> <span>Rated 9.5 out of 10 based</span><a href="#">&nbsp;256 reviews&nbsp;</a><span>on on ShopperApproved.</span></div>
+    <div class="dots" id="dots"></div>
+    <div class="feedback__total">Rated 9.5 out of 10 based <a class='link' href='#'>256 reviews</a> on on ShopperApproved.</div>
   </div>
 </section>
 <div class="pre-footer">
@@ -123,13 +160,6 @@
         </ul>
       </div>
       <div class="footer__col">
-        <h5 class="footer__title">Apps</h5>
-        <ul class="footer__list">
-          <li class="footer__el"><a class="footer__link" href="#">Mac</a></li>
-          <li class="footer__el"><a class="footer__link" href="#">How to Uninstall</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
         <h5 class="footer__title">Company</h5>
         <ul class="footer__list">
           <li class="footer__el"><a class="footer__link" href="#">Blog</a></li>
@@ -137,6 +167,13 @@
           <li class="footer__el"><a class="footer__link" href="#">Affiliate</a></li>
           <li class="footer__el"><a class="footer__link" href="#">Privacy Policy</a></li>
           <li class="footer__el"><a class="footer__link" href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5 class="footer__title">Apps</h5>
+        <ul class="footer__list">
+          <li class="footer__el"><a class="footer__link" href="#">Mac</a></li>
+          <li class="footer__el"><a class="footer__link" href="#">How to Uninstall</a></li>
         </ul>
       </div>
       <div class="footer__col">

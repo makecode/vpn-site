@@ -3,11 +3,17 @@
   flex-direction: row
   width: 100%
 
+  +m(900)
+    flex-direction: column
+
   &__list
     display: flex
     flex-direction: column
     width: 25%
     text-align-last: left
+  
+    +m(900)
+      width: 100%
 
   &__el
     position: relative

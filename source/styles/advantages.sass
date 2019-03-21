@@ -1,0 +1,21 @@
+.advantages
+  margin: 20px 0
+  display: inline-flex
+  flex-direction: row
+  +m(900)
+    flex-direction: column
+
+  &__el
+    margin-right: 30px
+    display: flex
+    align-items: center
+    
+    +m(900)
+      margin-right: 0
+      margin-bottom: 8px
+
+  &__el:last-child
+    margin-right: 0
+
+  &__text
+    margin-left: 10px
