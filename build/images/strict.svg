@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Feature Icon - Strict no-logs policy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Feature-Icon---Strict-no-logs-policy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4">
+            <polygon id="Fill-1" points="0 24 24 24 24 0 0 0"></polygon>
+            <path d="M12,20 C10.335,20 8.789,19.488 7.507,18.614 L18.614,7.507 C19.488,8.789 20,10.335 20,12 C20,16.411 16.411,20 12,20 M12,4 C13.665,4 15.211,4.512 16.493,5.386 L5.386,16.493 C4.512,15.211 4,13.665 4,12 C4,7.589 7.589,4 12,4 M12,2 C6.477,2 2,6.477 2,12 C2,17.523 6.477,22 12,22 C17.523,22 22,17.523 22,12 C22,6.477 17.523,2 12,2" id="Fill-2" fill="#2580E5"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>FB - Hover</title>
+    <desc>Created with Sketch.</desc>
+    <g id="FB---Hover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FB">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+            <g id="flogo-HexRBG-Wht-72" transform="translate(3.000000, 3.000000)" fill="#2580E5">
+                <path d="M17,0 L1,0 C0.44771525,-3.38176876e-17 6.76353751e-17,0.44771525 0,1 L0,17 C6.76353751e-17,17.5522847 0.44771525,18 1,18 L9.615,18 L9.615,11.04 L7.2775,11.04 L7.2775,8.315 L9.615,8.315 L9.615,6.315 C9.615,3.99 11.035,2.725 13.115,2.725 C13.8147627,2.72295498 14.5141219,2.75884096 15.21,2.8325 L15.21,5.25 L13.77,5.25 C12.645,5.25 12.4275,5.785 12.4275,6.5725 L12.4275,8.3075 L15.125,8.3075 L14.775,11.0325 L12.4275,11.0325 L12.4275,18 L17,18 C17.5522847,18 18,17.5522847 18,17 L18,1 C18,0.44771525 17.5522847,3.38176876e-17 17,0 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
