@@ -8,15 +8,24 @@
     <title>SafeLine VPN
     </title>
   <link href="./css/index.css" rel="stylesheet"></head>
-  <body>
+  <body id="body">
 <div class="detection">You are <span class='detection__status'>Unprotected</span>! IP: 194.44.136.82 Location: Ukraine <a class='detection__link' href='#'>Protect Your Privacy</a></div>
 <header class="header" id="header">
   <div class="header__wrap container">
-    <div class="logo"><a class="logt__link" href="#"></a><img class="logo_img" src="images/logo.svg"></div>
-    <nav class="navigation"><a class="navigation__link" href="#">Pricing</a><a class="navigation__link" href="#">Download</a><a class="navigation__link" href="#">Help</a><a class="navigation__link" href="#">English</a><a class="navigation__button" href="#">Get SafeLine VPN</a>
-    </nav>
+    <div class="logo" id="logo"><a class="logo__link" href="#"><img class="logo__img logo__dark" src="images/logo.svg"><img class="logo__img logo__white" src="images/logo-white.svg"></a></div>
+    <nav class="navigation"><a class="navigation__link" href="#">Pricing</a><a class="navigation__link" href="#">Download</a><a class="navigation__link" href="#">Help</a><a class="navigation__link" href="#">English</a>
+    </nav><a class="button-transparent" href="#">Get SafeLine VPN</a>
+    <div class="hamburger" id="hamburger"><span class="hamburger__el"></span><span class="hamburger__el"></span><span class="hamburger__el"></span></div>
   </div>
 </header>
+<div class="mobile-menu" id="mobile-menu">
+  <ul class="mobile-menu__list">
+    <li class="mobile-menu__el"><a class="mobile-menu__link" href="#">Pricing</a></li>
+    <li class="mobile-menu__el"><a class="mobile-menu__link" href="#">Download</a></li>
+    <li class="mobile-menu__el"><a class="mobile-menu__link" href="#">Help</a></li>
+    <li class="mobile-menu__el"><a class="mobile-menu__link" href="#">English</a></li>
+  </ul><a class="button" href="#">Get SafeLine VPN</a>
+</div>
 <section class="section hero">
   <div class="hero__wrap container">
     <h1 class="hero__title">Аccess the Internet securely and without limits</h1>
@@ -93,7 +102,7 @@
 </section>
 <section class="section feedback">
   <div class="feedback__wrap container">
-    <div class="feedback__title">What our customers say</div>
+    <h3 class="feedback__title">What our customers say</h3>
     <p class="feedback__sub-title">We care what our customers think of us and so should you.</p>
     <div class="reviews glider">
       <div class="review">

@@ -1,8 +1,14 @@
 .navigation
+  position: relative
+  transition: $transition
+
+  +m(900)
+    display: none
 
   &__link
-    color: #161b24
+    color: $dark
     margin-left: 30px
+    transition: $transition
   
   &__link:first-child
     margin-left: 0
@@ -10,14 +16,3 @@
   &__link:hover
     text-decoration: underline
     color: #348ff3
-
-  &__button
-    margin-left: 30px
-    display: none
-    width: 170px
-    height: 36px
-    line-height: 34px
-    border: solid 1px #2580e5;
-    border-radius: 4px
-    text-align: center
-    color: #2580e5

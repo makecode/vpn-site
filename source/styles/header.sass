@@ -4,23 +4,45 @@
   left: 0
   height: 72px
   width: 100%
+  z-index: $zHeader
+  // transition: $transition
+
+  +m(900)
+    top: 0
 
   &__wrap
+    position: relative
     display: flex
     justify-content: space-between
     align-items: center
     height: 100%
 
+  .button-transparent
+    position: absolute
+    right: -30px
+    top: 50%
+    transform: translateY(-50%)
+    transition: $transition
+    opacity: 0
+    
+    +m(900)
+      display: none
+
 .header.fixed
   top: 0
   position: fixed
   background-color: white
-  z-index: 1000
   opacity: 0.95
 
-.header.hidden,
-.header.fixed
+  .navigation
+    transform: translateX(-120px)
+
   .navigation__link:last-child
-    display: none
-  .navigation__button
-    display: inline-block
+    opacity: 0
+
+.header.fixed .button-transparent
+  right: 0
+  opacity: 1
+
+  +m(1040)
+    right: 20px

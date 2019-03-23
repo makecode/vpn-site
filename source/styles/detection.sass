@@ -1,19 +1,25 @@
+$colorOrange: #ff992b
+
 .detection
   height: 36px
   line-height: 36px
   background-color: #182638
   color: white
   text-align: center
-  font-size: 14px
+  font-family: $fontMedium
+  font-size: $fontSizeSmall
+
+  +m(900)
+    display: none
 
   &__status
     text-transform: uppercase
-    color: #ff992b
+    color: $colorOrange
 
   &__link
     position: relative
     margin-left: 20px
-    color: #2580e5
+    color: $darkBlue
 
   &__link::after
     position: absolute
@@ -25,7 +31,7 @@
     background-image: url('~media/arrow-right.svg')
 
   &__link:hover
-    color: #348ff3
+    color: $lightBlue
     text-decoration: underline
 
   &__link:hover::after

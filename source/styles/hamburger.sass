@@ -1,0 +1,29 @@
+.hamburger
+  position: relative
+  display: none
+  transition: .5s ease-in-out
+  cursor: pointer
+
+  +m(900)
+    display: block
+
+  &__el
+    display: block
+    margin: 3px auto
+    height: 2px
+    width: 16px
+    background-color: $dark
+    transition: .25s ease-in-out
+
+  &.menu-opened
+    .hamburger__el
+      background-color: white
+
+      &:nth-child(1)
+        transform: translateY(5px) rotate(45deg)
+
+      &:nth-child(2)
+        opacity: 0
+
+      &:nth-child(3)
+        transform: translateY(-5px) rotate(-45deg)

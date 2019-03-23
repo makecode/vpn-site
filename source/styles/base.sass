@@ -6,9 +6,25 @@ body
   width: 100%
   height: 100%
   font-size: 16px
+  font-family: $fontRegular
+  letter-spacing: 0.5px
   box-sizing: border-box
-  font-family: $f-text-regular
 
+  &.menu-opened
+    overflow: hidden
+
+    #mobile-menu
+      opacity: 1
+      visibility: visible
+
+    #header
+      background-color: $dark
+
+    #logo
+      .logo__white
+        opacity: 1
+      .logo__dark
+        opacity: 0
 ul
   list-style: none
 
@@ -29,29 +45,25 @@ input:focus
   outline: nones
 
 h1
-  font-size: 48px
-  font-weight: bold
+  font-size: $fontSizeH1
+  font-family: $fontBold
+
+h2
+  font-size: $fontSizeH2
+  font-family: $fontBold
+
+h3
+  font-size: $fontSizeH3
+  font-family: $fontBold
 
 .link
   font-size: 17px
-  color: $link
+  color: $darkBlue
+  font-family: $fontSemibold
 
 .link:hover
-  color: $linkHover
+  color: $lightBlue
   text-decoration: underline
-
-.social
-  display: flex
-  flex-direction: row
-
-  &__el
-    margin-right: 15px
-
-  &__el:last-child
-    margin-right: 0
-
-  &__link:hover svg
-    fill: red
 
 .buttons
   display: inline-flex
@@ -61,7 +73,15 @@ h1
   .link
     margin-top: 20px
 
+.feedback
+  padding: 90px 0
+  text-align: center
+  background-color: #f5f5f7
+
+  &__title
+    margin-bottom: 10px
+
 .copyright
   padding: 20px 0
-  font-size: 14px
+  font-size: $fontSizeSmall
   opacity: 0.5

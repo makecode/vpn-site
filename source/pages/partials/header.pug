@@ -8,12 +8,18 @@
 
 header.header#header
   div.header__wrap.container
-    div.logo
-      a.logt__link(href='#')
-      img(src=require('./../../media/logo.svg')).logo_img
+    div.logo#logo
+      a.logo__link(href='#')
+        img.logo__img.logo__dark(src=require('./../../media/logo.svg'))
+        img.logo__img.logo__white(src=require('./../../media/logo-white.svg'))
 
     nav.navigation
       each el in navigation
         a.navigation__link(href= el.link)= el.title
 
-      a.navigation__button(href='#') Get SafeLine VPN
+    a.button-transparent(href='#') Get SafeLine VPN
+
+    div.hamburger#hamburger
+      span.hamburger__el
+      span.hamburger__el
+      span.hamburger__el
