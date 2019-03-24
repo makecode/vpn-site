@@ -42,6 +42,31 @@ const common = merge([
         chunks: ['index', 'common'],
         template: PATH.source + '/pages/index/index.pug'
       }),
+      new HtmlWebpackPlugin({
+        filename: 'pricing.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/pricing/pricing.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'reset.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/reset/reset.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'change-password.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/change-password/change-password.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'done.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/done/done.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'check-email.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/check-email/check-email.pug'
+      }),
       // new CopyWebpackPlugin([{
         // from: './locales/**/*',
         // to: './js/'

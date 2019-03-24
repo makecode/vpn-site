@@ -1,12 +1,18 @@
 extends ../base
+block vars
+  - var bodyClasses = 'index detected';
 block title
   |SafeLine VPN
 block main
-  include ../partials/detection
-  include ../partials/header
-  include ../partials/mobile-menu
-  include ../partials/section-hero
-  include ../partials/section-superiority
-  include ../partials/section-reviews
-  include ../partials/pre-footer
-  include ../partials/footer
+  include ../_partials/detection
+  // end DETECTION
+  main.main
+    include ../_partials/section-hero
+    // end SECTION HERO
+    include ../_partials/section-superiority
+    // end SECTION SUPERIORITY
+    include ../_partials/section-reviews
+    // end SECTION REVIEWS
+    include ../_partials/pre-footer
+    // end PRE-FOOTER
+  // end MAIN

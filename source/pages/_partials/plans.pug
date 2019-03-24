@@ -1,0 +1,19 @@
+-
+  const plansItems = [
+    { period: '1 month', price: '$9.99', saving: 'Save 0%' },
+    { period: '2 year', price: '$2.99', saving: 'Save 75%', active: true, best: true },
+    { period: '6 month', price: '$4.99', saving: 'Save 25%' }
+  ]
+
+form.plans
+  each plan in plansItems
+    label.plan(class= plan.active ? 'active' : '')
+      input.plan__input(type='radio', name='plans')
+      div.plan__content
+        if plan.best
+          span.plan__label Best deal
+        span.plan__checkbox
+        span.plan__period= plan.period
+        span.plan__price= plan.price
+        span.plan__month per month
+        span.plan__discount= plan.saving

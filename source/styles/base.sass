@@ -3,12 +3,14 @@ html
   width: 100%
 
 body
+  display: flex
   width: 100%
-  height: 100%
+  min-height: 100%
   font-size: 16px
   font-family: $fontRegular
   letter-spacing: 0.5px
   box-sizing: border-box
+  background-color: $grey
 
   &.menu-opened
     overflow: hidden
@@ -25,6 +27,14 @@ body
         opacity: 1
       .logo__dark
         opacity: 0
+
+  &.detected
+    #header
+      top: $detectionHeight
+
+  &.index
+    background-color: white
+
 ul
   list-style: none
 
@@ -41,12 +51,12 @@ a
   text-decoration: none
   color: white
 
-input:focus
-  outline: nones
-
 h1
   font-size: $fontSizeH1
   font-family: $fontBold
+
+  +m(900)
+    font-size: $fontSizeH1Small
 
 h2
   font-size: $fontSizeH2
@@ -55,6 +65,20 @@ h2
 h3
   font-size: $fontSizeH3
   font-family: $fontBold
+
+h5
+  font-size: $fontSizeH5
+  font-family: $fontBold
+
+input
+  padding: 0 10px
+  width: 100%
+  height: 44px
+  line-height: 42px
+  border: solid 1px #d4d6da
+
+input:focus
+  outline: none
 
 .link
   font-size: 17px
@@ -76,7 +100,7 @@ h3
 .feedback
   padding: 90px 0
   text-align: center
-  background-color: #f5f5f7
+  background-color: $grey
 
   &__title
     margin-bottom: 10px
@@ -85,3 +109,13 @@ h3
   padding: 20px 0
   font-size: $fontSizeSmall
   opacity: 0.5
+
+.sidebar
+  width: 270px
+
+  &__title
+    font-family: $fontBold
+
+  &__list
+    display: flex
+    flex-direction: column

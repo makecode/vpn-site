@@ -1,3 +1,5 @@
+- var bodyClass = '';
+block vars
 doctype html
 html
   head
@@ -7,5 +9,14 @@ html
     meta(name="description" content="Pioneering Private Digital Transactions")
     title
       block title
-  body#body
-    block main
+  body#body(class=bodyClasses)
+    div.out
+      include _partials/header
+      // end HEADER
+      include _partials/mobile-menu
+      // end MOBILE MENU
+
+      block main
+
+      include _partials/footer
+      // end FOOTER

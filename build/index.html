@@ -8,8 +8,8 @@
     <title>SafeLine VPN
     </title>
   <link href="./css/index.css" rel="stylesheet"></head>
-  <body id="body">
-<div class="detection">You are <span class='detection__status'>Unprotected</span>! IP: 194.44.136.82 Location: Ukraine <a class='detection__link' href='#'>Protect Your Privacy</a></div>
+  <body class="index detected" id="body">
+    <div class="out">
 <header class="header" id="header">
   <div class="header__wrap container">
     <div class="logo" id="logo"><a class="logo__link" href="#"><img class="logo__img logo__dark" src="images/logo.svg"><img class="logo__img logo__white" src="images/logo-white.svg"></a></div>
@@ -18,6 +18,7 @@
     <div class="hamburger" id="hamburger"><span class="hamburger__el"></span><span class="hamburger__el"></span><span class="hamburger__el"></span></div>
   </div>
 </header>
+      <!-- end HEADER-->
 <div class="mobile-menu" id="mobile-menu">
   <ul class="mobile-menu__list">
     <li class="mobile-menu__el"><a class="mobile-menu__link" href="#">Pricing</a></li>
@@ -26,9 +27,13 @@
     <li class="mobile-menu__el"><a class="mobile-menu__link" href="#">English</a></li>
   </ul><a class="button" href="#">Get SafeLine VPN</a>
 </div>
+      <!-- end MOBILE MENU-->
+<div class="detection">You are <span class='detection__status'>Unprotected</span>! IP: 194.44.136.82 Location: Ukraine <a class='detection__link' href='#'>Protect Your Privacy</a></div>
+      <!-- end DETECTION-->
+      <main class="main">
 <section class="section hero">
   <div class="hero__wrap container">
-    <h1 class="hero__title">Аccess the Internet securely and without limits</h1>
+    <h1 class="hero__title">Access the Internet securely and without limits</h1>
 <ul class="advantages">
   <li class="advantages__el"><span class="advantages__icon icon encryption"></span><span class="advantages__text">Military-grade encryption</span></li>
   <li class="advantages__el"><span class="advantages__icon icon strict"></span><span class="advantages__text">Strict no-logs policy</span></li>
@@ -37,7 +42,7 @@
 </ul>
 <div class="buttons"><a class="button" href="#">Get SafeLine VPN</a><a class="link" href="#">Start Free Trial</a></div>
     <div class="hero__screen"><img src="images/screen.png"></div>
-  </div><svg class='hero__vawes' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
+  </div><svg id='vawes' class='hero__vawes' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
     height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
     <defs>
       <path id="wave-one" stroke="#2580E5" stroke-width="2" fill="none" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
@@ -75,6 +80,7 @@
     </g>
   </svg>
 </section>
+        <!-- end SECTION HERO-->
 <section class="section superiorities container">
   <div class="figure-group">
     <figure class="figure">
@@ -100,6 +106,7 @@
     </figure>
   </div>
 </section>
+        <!-- end SECTION SUPERIORITY-->
 <section class="section feedback">
   <div class="feedback__wrap container">
     <h3 class="feedback__title">What our customers say</h3>
@@ -122,6 +129,7 @@
     <div class="feedback__total">Rated 9.5 out of 10 based <a class='link' href='#'>256 reviews</a> on on ShopperApproved.</div>
   </div>
 </section>
+        <!-- end SECTION REVIEWS-->
 <div class="pre-footer">
   <div class="pre-footer__wrap container">
     <h3 class="pre-footer__title">Get SafeLine VPN</h3>
@@ -155,6 +163,9 @@
 <div class="buttons"><a class="button" href="#">Get SafeLine VPN</a><a class="link" href="#">Start Free Trial</a></div>
   </div>
 </div>
+        <!-- end PRE-FOOTER-->
+      </main>
+      <!-- end MAIN-->
 <footer class="footer">
   <div class="footer__wrap container">
     <div class="footer__top">
@@ -198,5 +209,7 @@
     </div>
   </div>
 </footer>
+      <!-- end FOOTER-->
+    </div>
   <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/index.js"></script></body>
 </html>

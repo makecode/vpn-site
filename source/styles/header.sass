@@ -1,14 +1,16 @@
 .header
   position: absolute
-  top: 36px
+  top: 0
   left: 0
-  height: 72px
+  height: $headerHeight
   width: 100%
+  background-color: white
+  border-bottom: 1px solid #DDDEDF
   z-index: $zHeader
-  // transition: $transition
+  overflow: hidden
 
   +m(900)
-    top: 0
+    top: 0!important
 
   &__wrap
     position: relative
@@ -24,12 +26,12 @@
     transform: translateY(-50%)
     transition: $transition
     opacity: 0
-    
+
     +m(900)
       display: none
 
 .header.fixed
-  top: 0
+  top: 0!important
   position: fixed
   background-color: white
   opacity: 0.95

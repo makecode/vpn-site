@@ -1,3 +1,10 @@
+.out
+  padding-top: $headerHeight
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  width: 100%
+
 .container
   width: 1170px
   margin: 0 auto
@@ -8,3 +15,50 @@
   +m(1040)
     width: 100%
     padding: 0 20px
+
+.main
+  flex: 1
+
+.section.section-form
+  margin: 90px 0
+  min-height: 400px
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+.section-form
+  padding: 0 20px
+
+  &__box
+    width: 100%
+    max-width: 370px
+
+  &__text
+    margin: 20px 0
+    line-height: 1.5
+
+.section-pricing
+  position: relative
+  padding-top: 90px
+  //padding-bottom: 90px
+  padding-right: 300px
+  flex-direction: column
+
+  // temp padding
+  // delete after including payments
+  padding-bottom: 390px
+
+  +m(900)
+    padding-top: 40px
+    padding-right: 0
+
+  .sidebar
+    position: absolute
+    top: 240px
+    right: 0
+
+    +m(900)
+      margin-top: 40px
+      position: relative
+      top: 0

@@ -8,6 +8,7 @@ import 'glider-js/glider.min.css';
 
 $(document).ready(function() {
   const mobile = 900;// min window width for mobile
+  const detectedBodyClass = 'detected';
   let isMobile = null;
   let headerOffset = null;
 
@@ -15,12 +16,17 @@ $(document).ready(function() {
   const header = document.getElementById('header');
   const hamburger = document.getElementById('hamburger');
   const body = document.getElementById('body');
+  const vawes = document.getElementById('vawes');
 
   // check if is mobile window size
   const checkMobile = () => {
     isMobile = window.innerWidth <= mobile;
-    headerOffset = isMobile ? 0 : 36;
-    console.log('IS MOBILE', isMobile);
+  };
+
+  // check header offset
+  // if we have detection block on the page - offset = 36px
+  const checkHeaderOffset = () => {
+    headerOffset = $(body).hasClass(detectedBodyClass) && !isMobile ? 36 : 0;
   };
 
   // on hamburger click
@@ -29,22 +35,31 @@ $(document).ready(function() {
     $(hamburger).toggleClass('menu-opened');
   });
 
+  // on plan click
+  $('.plan').map((index, el) => {
+    $(el).click(function () {
+      $('.plan.active').removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+
   // on scroll page callback
   const onScroll = (event) => {
     const topOffset = window.pageYOffset;
-    console.log('HEADER OFFSET', headerOffset)
+
     if (topOffset >= headerOffset) {
       header.className = `header fixed`;
     } else {
       header.className = `header`;
     }
-  }
+  };
 
   // on resize window callback
   const onResize = (event) => {
     checkMobile();
+    checkHeaderOffset();
     runSlider();
-  }
+  };
 
   // Glider initialization
   const initSlider = () => {
@@ -53,18 +68,26 @@ $(document).ready(function() {
       dots: '#dots',
       draggable: false
     });
-  }
+  };
 
-  // run glider only for mobile
+  // run glider only for mobile on index page
   const runSlider = () => {
-    if (isMobile) {
+    const pageIsIndex = $(body).hasClass('index');
+    if (pageIsIndex && isMobile) {
       initSlider();
     }
   };
 
+  // show vawes SVG
+  const showVawes = () => {
+    $(vawes).fadeIn(2000);
+  };
+
   // run fuctions and listeners
   checkMobile();
+  checkHeaderOffset();
   runSlider();
+  setTimeout(showVawes, 1000);
   window.addEventListener('scroll', onScroll);
   window.addEventListener('resize', onResize);
 });
