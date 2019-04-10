@@ -1,0 +1,58 @@
+-
+  const knowledgesItems = [
+    {
+      title: 'Getting started / Setting up',
+      links: [
+        { text: 'What is SafeLine VPN?', link: '#' },
+        { text: 'Which devices support SafeLine VPN?', link: '#' },
+        { text: 'Setting up SafeLine VPN for Mac', link: '#' },
+        { text: 'Which country should I choose for connection?', link: '#' },
+        { text: 'How do I visit blocked websites with SafeLine VPN?', link: '#' },
+        { text: 'View 9 articles', link: '#' }
+      ]
+    },
+    {
+      title: 'Billing and accounts',
+      links: [
+        { text: 'How do I sign up for SafeLine VPN?', link: '#' },
+        { text: 'Which payment methods do you accept?', link: '#' },
+        { text: 'What is the SafeLine VPN money-back policy?', link: '#' },
+        { text: 'How do i change the password I use for my SafeLine VPN account?', link: '#' },
+        { text: 'How do I extend my SafeLine VPN subscription?', link: '#' },
+        { text: 'View 13 articles', link: '#' }
+      ]
+    },
+    {
+      title: 'Troubleshooting',
+      links: [
+        { text: 'Unable to connect to SafeLine VPN servers', link: '#' },
+        { text: 'Application does not open', link: '#' },
+        { text: 'I get error when trying to connect to SafeLine VPN servers', link: '#' },
+        { text: 'Which country should I choose for connection?', link: '#' },
+        { text: 'How do I visit blocked websites with SafeLine VPN?', link: '#' },
+        { text: 'View 9 articles', link: '#' }
+      ]
+    },
+    {
+      title: 'Contact Support',
+      links: [
+        { text: 'Didn’t find sollution to your problem?', link: '#' },
+        { text: 'Contact us', link: '#' }
+      ]
+    }
+  ]
+
+section.section-knowledge
+  div.container
+    div.knowledges
+      h3.knowloedges__title Knowledge Base
+      p.knowledges__subtitle Common questions about SafeLine VPN and all the answers.
+
+      div.knowledges__box
+        each item in knowledgesItems
+          div.knowledges__item
+            h5.knowledges__item-title= item.title
+            ul.knowledges__list
+              each el in item.links
+                li.knowledges__el
+                  a(href= el.link).knowledges__link= el.text

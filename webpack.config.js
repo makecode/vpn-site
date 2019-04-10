@@ -67,6 +67,16 @@ const common = merge([
         chunks: ['index', 'common'],
         template: PATH.source + '/pages/check-email/check-email.pug'
       }),
+      new HtmlWebpackPlugin({
+        filename: 'contact-us.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/contact-us/contact-us.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'help.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/help/help.pug'
+      }),
       // new CopyWebpackPlugin([{
         // from: './locales/**/*',
         // to: './js/'
