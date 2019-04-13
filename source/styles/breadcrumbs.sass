@@ -1,0 +1,39 @@
+$link: #161b24
+
+.breadcrumbs
+  display: flex
+  flex-direction: row
+
+  &__el
+    position: relative
+    margin-left: 30px
+
+  &__el:first-child
+    margin-left: 0
+
+  &__el:first-child::before
+    display: none
+
+  &__el::before
+    position: absolute
+    left: -20px
+    top: 7px
+    content: ''
+    width: 8px
+    height: 8px
+    border-right: 2px solid $link
+    border-bottom: 2px solid $link
+    opacity: 0.5
+    transform: rotate(-45deg)
+
+  &__el:last-child
+    cursor: text
+    pointer-events: none
+
+  &__link
+    color: $link
+    opacity: 0.5
+
+  &__link:hover
+    color: $lightBlue
+    opacity: 1

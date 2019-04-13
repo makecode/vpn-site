@@ -1,22 +1,25 @@
+-
+  const contactRectangles = [
+    { icon: 'help-help-center',   text: 'Help Center'     , link: '#' },
+    { icon: 'help-submit-ticket', text: 'Submit a Ticket',  link: '#' },
+    { icon: 'help-contact',       text: 'Contact Support',  link: '#' }
+  ]
+
 section.section.section-contact-us.container
-  h2.section__title Contact us
-  p.section__text Get in touch and let us know how we can help you.
+  div.container
+    h2.section__title Contact us
+    p.section__text Get in touch and let us know how we can help you.
 
-  div.rectangles
-    a(href='#').rectangle
-      span.rectangle__icon.icon.help-help-center
-      span.rectangle__title Help Center
-    a(href='#').rectangle
-      span.rectangle__icon.icon.help-submit-ticket
-      span.rectangle__title Submit a Ticket
-    a(href='#').rectangle
-      span.rectangle__icon.icon.help-contact
-      span.rectangle__title Contact Support
+    div.rectangles
+      each rectangle in contactRectangles
+        a(href=rectangle.link).rectangle
+          span(class=rectangle.icon).rectangle__icon.icon
+          span.rectangle__title=rectangle.text
 
-  div.block-contacts
-    h5 Contact Information
-    p Rello Labs Ltd.
-    p 6, Nikou Georgiou, Block C, 3rd Floor, Office 304
-    p 1095, Nicosia, Cyprus
-    p Phone (Cyprus): +357 (22) 000557
-    p Email: <a href='mailto:info@safelinevpn.com'>info@safelinevpn.com</a>
+    div.block-contacts
+      h5 Contact Information
+      p Rello Labs Ltd.
+      p 6, Nikou Georgiou, Block C, 3rd Floor, Office 304
+      p 1095, Nicosia, Cyprus
+      p Phone (Cyprus): +357 (22) 000557
+      p Email: <a href='mailto:info@safelinevpn.com'>info@safelinevpn.com</a>

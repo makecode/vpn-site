@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Help Icon - Contact Us</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Help-Icon---Contact-Us" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4">
+            <polygon id="Fill-1" points="0 64 64 64 64 0 0 0"></polygon>
+            <path d="M40.1379,32 L58.9999,15.833 L58.9999,48.167 L40.1379,32 Z M26.1669,33.976 L28.4209,35.907 C29.4579,36.797 30.7289,37.241 31.9999,37.241 C33.2709,37.241 34.5429,36.796 35.5789,35.907 L37.8329,33.976 L57.6949,51 L6.3049,51 L26.1669,33.976 Z M23.8619,32 L4.9999,48.168 L4.9999,15.832 L23.8619,32 Z M33.6269,33.63 C32.6829,34.438 31.3159,34.438 30.3729,33.63 L6.3049,13 L57.6949,13 L33.6269,33.63 Z M57.9999,10 L5.9999,10 C3.7909,10 1.9999,11.791 1.9999,14 L1.9999,50 C1.9999,52.209 3.7909,54 5.9999,54 L57.9999,54 C60.2089,54 61.9999,52.209 61.9999,50 L61.9999,14 C61.9999,11.791 60.2089,10 57.9999,10 Z" id="Fill-2" fill="#2580E5"></path>
+        </g>
+    </g>
+</svg>

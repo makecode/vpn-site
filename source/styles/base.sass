@@ -11,6 +11,7 @@ body
   letter-spacing: 0.5px
   box-sizing: border-box
   background-color: $grey
+  color: $textDefault
 
   &.menu-opened
     overflow: hidden
@@ -71,12 +72,25 @@ h5
   font-size: $fontSizeH5
   font-family: $fontBold
 
-input
+h6
+  font-size: $fontSizeH6
+  font-family: $fontBold
+
+input,
+select,
+textarea
   padding: 0 10px
   width: 100%
+  border-radius: 2px
+  border: solid 1px #d4d6da
+
+input,
+select
   height: 44px
   line-height: 42px
-  border: solid 1px #d4d6da
+
+textarea
+  resize: none
 
 input:focus
   outline: none
@@ -130,7 +144,7 @@ input:focus
   a,
   a:active,
   a:visited
-    color: #348ff3
+    color: $lightBlue
 
   a:hover
     text-decoration: underline

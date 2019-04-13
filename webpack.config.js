@@ -77,9 +77,54 @@ const common = merge([
         chunks: ['index', 'common'],
         template: PATH.source + '/pages/help/help.pug'
       }),
+      new HtmlWebpackPlugin({
+        filename: 'help-billing.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/help-billing/help-billing.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'help-get-started.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/help-get-started/help-get-started.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'terms.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/terms/terms.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'privacy.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/privacy/privacy.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'rights.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/rights/rights.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'uninstall.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/uninstall/uninstall.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'ticket-submit.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/ticket-submit/ticket-submit.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'ticket-success.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/ticket-success/ticket-success.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'payment-success.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/payment-success/payment-success.pug'
+      }),
       // new CopyWebpackPlugin([{
-        // from: './locales/**/*',
-        // to: './js/'
+      // from: './locales/**/*',
+      // to: './js/'
       // }]),
       new webpack.optimize.CommonsChunkPlugin({
         name: 'common'

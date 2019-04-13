@@ -1,0 +1,11 @@
+{
+    "name": "SafeLine VPN",
+    "short_name": "SafeLine VPN",
+    "description": "SafeLine VPN, Best VPN client",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "16x16 32x32 96x96"
+        }
+    ]
+}

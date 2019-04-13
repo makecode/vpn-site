@@ -1,0 +1,25 @@
+section.section.section-ticket-submit.section-form
+  div.section-form__box
+    h3.section-form__title Submit a ticket
+    p.section-form__text Get in touch and let us know how we can help you.
+
+    form.form.form-ticket-submit
+      div.form__field
+        label.form__label(for='email') Email address
+        input.form__input.input#email(type="email" name='email')
+
+      div.form__field
+        label.form__label(for='subject') Subject
+        div.form__select-wrapper
+          select.form__select.select#subject(name="subject")
+            option(value='1' disabled selected).first Select
+            option(value='1') 1
+            option(value='2') 2
+            option(value='3') 3
+
+      div.form__field
+        label.form__label(for='subject') Question
+        textarea.form__textarea#question(name="question" rows="6")
+
+      div.form__action
+        button.button(type="submit") Submit

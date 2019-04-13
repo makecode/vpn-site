@@ -1,0 +1,38 @@
+-
+  const startedMenu = [
+    { title: 'What is SafeLine VPN?',                                                           link: '#what-is' },
+    { title: 'Which devices support SafeLine VPN?',                                             link: '#support-devices' },
+    { title: 'What are SafeLine VPN requirements?',                                             link: '#requirements' },
+    { title: 'Setting up SafeLine VPN for Mac',                                                 link: '#setting-up-mac' },
+    { title: 'Which country should I choose for connection?',                                   link: '#country-connection' },
+    { title: 'How do I visit blocked websites with SafeLine VPN?',                              link: '#visit-blocked-site' },
+    { title: 'Can i use the same account on several devices/platforms at the same time?',       link: '#same-account' },
+    { title: 'How to check if you are connected successfully?',                                 link: '#check-connection' },
+    { title: 'How do I uninstall SafeLine VPN?',                                                link: '#uninstall' }
+  ]
+
+div.section.section-get-started
+  div.section__wrap.container
+    div.section__main
+
+      div.section__header
+        ul.breadcrumbs
+          li.breadcrumbs__el
+            a(href='#').breadcrumbs__link SafeLine VPN
+          li.breadcrumbs__el
+            a(href='#').breadcrumbs__link Getting started / Setting up
+
+            form.form.form-reset
+
+        form.form.form-section-search
+          div.form__field
+            input.form__input.input#section-search(type="text" name='section-search' placeholder='Search')
+
+      div.section__sidebar
+        h6 Getting started
+        ul.menu
+          each item in startedMenu
+            li.menu__el
+              a.menu__link(href=item.link target='_self')= item.title
+
+      include text-get-started

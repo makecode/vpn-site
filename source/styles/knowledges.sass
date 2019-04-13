@@ -1,8 +1,52 @@
+$text: #182638
+$blue: #2580e5
+
 .knowledges
+
+  &__title
+    text-align: center
+
+  &__subtitle
+    margin-top: 20px
+    text-align: center
+
   &__box
+    margin-top: 60px
     display: flex
-    flex-direction: row 
+    flex-direction: row
     flex-wrap: wrap
+    justify-content: space-between
 
   &__item
-    width: 50%
+    padding: 30px
+    max-width: 570px
+    width: 100%
+    border: 1px solid #d4d6da
+    box-sizing: border-box
+
+    +m(1200)
+      max-width: 100%
+      margin-bottom: 30px
+
+  &__item:nth-child(1),
+  &__item:nth-child(2)
+    margin-bottom: 30px
+
+    +m(1200)
+
+  &__el
+    margin-top: 10px
+
+  &__link
+    color: $textDefault
+    letter-spacing: 0
+
+  &__link:hover
+    color: $blue
+
+  &__el:last-child .knowledges__link
+    color: $blue
+
+  &__el:last-child .knowledges__link:hover
+    text-decoration: underline
+

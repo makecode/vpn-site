@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Search</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4">
+            <polygon id="Fill-1" points="0 24 24 24 24 0 0 0"></polygon>
+            <path d="M5,10.5 C5,7.467 7.467,5 10.5,5 C13.533,5 16,7.467 16,10.5 C16,13.533 13.533,16 10.5,16 C7.467,16 5,13.533 5,10.5 Z M21.707,20.293 L16.457,15.043 C17.421,13.782 18,12.21 18,10.5 C18,6.358 14.643,3 10.5,3 C6.357,3 3,6.358 3,10.5 C3,14.642 6.357,18 10.5,18 C12.21,18 13.781,17.421 15.043,16.458 L20.293,21.707 L21.707,20.293 Z" id="Fill-2" fill="#161B24"></path>
+        </g>
+    </g>
+</svg>

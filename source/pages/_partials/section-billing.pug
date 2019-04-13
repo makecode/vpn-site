@@ -1,0 +1,42 @@
+-
+  const billingMenu = [
+    { title: 'How do I sign up for SafeLine VPN?',                                    link: '#sign-up' },
+    { title: 'Which payment methods do you accept?',                                  link: '#payment-method-accept' },
+    { title: 'What is the SafeLine VPN money-back policy?',                           link: '#mony-back-policy' },
+    { title: 'How do i change the email address I use for my SafeLine VPN account?',  link: '#change-email' },
+    { title: 'How do i change the password I use for my SafeLine VPN account?',       link: '#change-password' },
+    { title: 'How do I extend my SafeLine VPN subscription?',                         link: '#extend-subscription' },
+    { title: 'How do I cancel my SafeLine VPN subscription?',                         link: '#cancel-subscription' },
+    { title: 'Can I get a refund for my SafeLine VPN subscription?',                  link: '#refound-subscription' },
+    { title: 'How do I close my SafeLine VPN account?',                               link: '#close-account' },
+    { title: 'I have been charged twice',                                             link: '#charged-twice' },
+    { title: 'Unauthorised Credit or Debit card charge',                              link: '#unauthorised-card' },
+    { title: 'How can I get a receipt for my payment?',                               link: '#receipt-payment' },
+    { title: 'How do I activate my subscription?',                                    link: '#activate-subscription' }
+  ]
+
+div.section.section-billing
+  div.section__wrap.container
+    div.section__main
+
+      div.section__header
+        ul.breadcrumbs
+          li.breadcrumbs__el
+            a(href='#').breadcrumbs__link SafeLine VPN
+          li.breadcrumbs__el
+            a(href='#').breadcrumbs__link Billing and accounts
+
+            form.form.form-reset
+
+        form.form.form-section-search
+          div.form__field
+            input.form__input.input#section-search(type="text" name='section-search' placeholder='Search')
+
+      div.section__sidebar
+        h6 Billing and accounts
+        ul.menu
+          each item in billingMenu
+            li.menu__el
+              a.menu__link(href=item.link target='_self')= item.title
+
+      include text-billing

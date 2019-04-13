@@ -1,0 +1,26 @@
+.menu
+  width: 270px
+
+  +m(1040)
+    width: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    margin-bottom: 30px
+
+  &__el
+    margin-top: 20px
+    
+    +m(1040)
+      padding-right: 20px
+      width: 50%
+
+    +m(768)
+      width: 100%
+      padding-right: 0
+
+  &__link
+    color: $textDefault
+
+  &__link:hover
+    color: $lightBlue

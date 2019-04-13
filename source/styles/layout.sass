@@ -4,6 +4,7 @@
   flex-direction: column
   min-height: 100%
   width: 100%
+  min-width: 320px
 
 .container
   width: 1170px
@@ -19,13 +20,57 @@
 .main
   flex: 1
 
+.section
+  &__text
+    margin: 20px 0
+
+  &__wrap
+    position: relative
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    line-height: 24px
+    padding-left: 400px
+
+    +m(1200)
+      padding-left: 300px
+
+    +m(1040)
+      padding-left: 20px
+
+  &__header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+    +m(1200)
+      flex-direction: column-reverse
+      align-items: flex-start
+
+      .form
+        margin-bottom: 20px
+        width: 100%
+
+  &__sidebar
+    position: absolute
+    top: 0
+    left: 0
+    padding-top: 10px
+    min-width: 30%
+
+    +m(1040)
+      position: relative
+
+  &__main
+    height: 70%
+
 .section.section-form
   margin: 90px 0
   min-height: 400px
   display: flex
   justify-content: center
   align-items: center
-
 
 .section-form
   padding: 0 20px
@@ -80,7 +125,85 @@
   .rectangle
     width: 23%
 
-.section
+    +m(1040)
+      width: 48%
 
-  &__text
-    margin: 20px 0
+    +m(768)
+      width: 100%
+      
+
+.section-knowledge
+  padding: 90px 0
+  background-color: white
+
+.section-billing,
+.section-get-started
+  padding: 30px 0 90px
+
+.section-text
+  padding: 90px 0!important
+  max-width: 770px
+  width: 100%
+  margin: 0 auto
+
+  +m(900)
+    padding: 90px 20px!important
+
+.section-ticket-submit
+  .section-form__box
+    max-width: 570px
+
+.section-ticket-success
+  text-align: center
+
+.section-payment-success
+  padding: 90px 0
+  text-align: center
+  
+  h2
+    margin-top: 30px
+  
+  p
+    margin: 20px 0 30px
+
+.information,
+.section-text
+  padding: 30px 100px 0 0
+
+
+  +m(1200)
+    padding-right: 0
+
+  h2
+    margin-bottom: 30px
+
+  h5
+    margin-bottom: 20px
+
+  p
+    margin-bottom: 16px
+    text-overflow: ellipsis
+    overflow: hidden
+
+  p:last-child
+    margin-bottom: 0
+
+  a
+    color: $lightBlue
+
+  a:hover
+    text-decoration: underline
+
+  ul
+    padding-left: 20px
+    list-style: disc
+    margin-top: 16px
+    margin-bottom: 16px
+
+  li
+    padding-left: 10px
+    margin-left: 20px
+    margin-bottom: 16px
+
+  li:last-child
+    margin-bottom: 0
