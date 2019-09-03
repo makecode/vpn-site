@@ -1,18 +1,15 @@
 .navigation
   position: relative
   transition: $transition
+  z-index: 1
 
   +m(900)
     display: none
 
   &__link
     color: $dark
-    margin-left: 30px
+    margin-right: 30px
     transition: $transition
 
-  &__link:first-child
-    margin-left: 0
-
   &__link:hover
-    text-decoration: underline
     color: $lightBlue

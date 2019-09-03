@@ -21,6 +21,10 @@
   flex: 1
 
 .section
+
+  &__container
+    //
+
   &__text
     margin: 20px 0
 
@@ -43,6 +47,7 @@
     flex-direction: row
     justify-content: space-between
     align-items: center
+    width: 100%
 
     +m(1200)
       flex-direction: column-reverse
@@ -62,7 +67,11 @@
     +m(1040)
       position: relative
 
+    +m(900)
+      display: none
+
   &__main
+    width: 100%
     height: 70%
 
 .section.section-form
@@ -70,7 +79,6 @@
   min-height: 400px
   display: flex
   justify-content: center
-  align-items: center
 
 .section-form
   padding: 0 20px
@@ -84,19 +92,21 @@
     line-height: 1.5
 
 .section-pricing
-  position: relative
-  padding-top: 90px
-  //padding-bottom: 90px
-  padding-right: 300px
-  flex-direction: column
+  background-color: $grey
 
-  // temp padding
-  // delete after including payments
-  padding-bottom: 390px
+  .section__container
+    position: relative
+    padding-top: 90px
+    padding-right: 300px
+    flex-direction: column
 
-  +m(900)
-    padding-top: 40px
-    padding-right: 0
+    // temp padding
+    // delete after including payments
+    padding-bottom: 390px
+
+    +m(900)
+      padding-top: 40px
+      padding-right: 20px
 
   .sidebar
     position: absolute
@@ -112,8 +122,16 @@
   padding: 90px 0
   text-align: center
 
+  .rectangles
+    justify-content: center
+
+  .rectangle
+    margin-left: 10px
+    margin-right: 10px
+
 .section-help
   padding: 90px 0
+  background-color: $grey
 
   h2
     text-align: center
@@ -130,7 +148,7 @@
 
     +m(768)
       width: 100%
-      
+
 
 .section-knowledge
   padding: 90px 0
@@ -159,10 +177,10 @@
 .section-payment-success
   padding: 90px 0
   text-align: center
-  
+
   h2
     margin-top: 30px
-  
+
   p
     margin: 20px 0 30px
 

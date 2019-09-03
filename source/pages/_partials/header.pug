@@ -2,8 +2,7 @@
   const navigation = [
     { title: 'Pricing', link: '#' },
     { title: 'Download', link: '#' },
-    { title: 'Help', link: '#' },
-    { title: 'English', link: '#' },
+    { title: 'Help', link: '#' }
   ]
 
 header.header#header
@@ -16,6 +15,14 @@ header.header#header
     nav.navigation
       each el in navigation
         a.navigation__link(href= el.link)= el.title
+
+      div.dropdown
+        span.dropdown__active English
+        div.dropdown__menu
+          a(href='#').dropdown__link English
+          a(href='#').dropdown__link Deutsch
+          a(href='#').dropdown__link Français
+          a(href='#').dropdown__link Türkçe
 
     a.button-transparent(href='#') Get SafeLine VPN
 

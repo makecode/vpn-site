@@ -16,7 +16,10 @@
 <header class="header" id="header">
   <div class="header__wrap container">
     <div class="logo" id="logo"><a class="logo__link" href="#"><img class="logo__img logo__dark" src="images/logo.svg"><img class="logo__img logo__white" src="images/logo-white.svg"></a></div>
-    <nav class="navigation"><a class="navigation__link" href="#">Pricing</a><a class="navigation__link" href="#">Download</a><a class="navigation__link" href="#">Help</a><a class="navigation__link" href="#">English</a>
+    <nav class="navigation"><a class="navigation__link" href="#">Pricing</a><a class="navigation__link" href="#">Download</a><a class="navigation__link" href="#">Help</a>
+      <div class="dropdown"><span class="dropdown__active">English</span>
+        <div class="dropdown__menu"><a class="dropdown__link" href="#">English</a><a class="dropdown__link" href="#">Deutsch</a><a class="dropdown__link" href="#">Français</a><a class="dropdown__link" href="#">Türkçe</a></div>
+      </div>
     </nav><a class="button-transparent" href="#">Get SafeLine VPN</a>
     <div class="hamburger" id="hamburger"><span class="hamburger__el"></span><span class="hamburger__el"></span><span class="hamburger__el"></span></div>
   </div>
@@ -31,9 +34,10 @@
   </ul><a class="button" href="#">Get SafeLine VPN</a>
 </div>
       <!-- end MOBILE MENU-->
-      <main class="main container">
+      <main class="main">
 <section class="section section-pricing">
-  <h1>Chose your SafeLine VPN plan</h1><span class="trump">30 day money back guarantee.</span>
+  <div class="section__container container">
+    <h1>Chose your SafeLine VPN plan</h1><span class="trump">30 day money back guarantee.</span>
 <form class="plans">
   <label class="plan">
     <input class="plan__input" type="radio" name="plans">
@@ -51,12 +55,12 @@
     </div>
   </label>
 </form>
-  <!-- end PLANS-->
+    <!-- end PLANS-->
 <div class="payments">
   <h5 class="payments__title">Payment information</h5>
   <h1>Payments will be here</h1>
 </div>
-  <!-- end PAYMENTS-->
+    <!-- end PAYMENTS-->
 <div class="sidebar"><span class="sidebar__title">With SafeLine VPN you get:</span>
   <aside class="sidebar__aside">
     <ul class="sidebar__list">
@@ -79,7 +83,8 @@
     </ul>
   </aside>
 </div>
-  <!-- end SIDEBAR-->
+    <!-- end SIDEBAR-->
+  </div>
 </section>
         <!-- end SECTION PRICING-->
       </main>

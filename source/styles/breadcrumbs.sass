@@ -3,20 +3,24 @@ $link: #161b24
 .breadcrumbs
   display: flex
   flex-direction: row
+  width: 100%
 
   &__el
     position: relative
-    margin-left: 30px
+    padding-left: 30px
+    overflow: hidden
+    text-overflow: ellipsis
 
   &__el:first-child
-    margin-left: 0
+    padding-left: 0
+    flex-shrink: 0
 
   &__el:first-child::before
     display: none
 
   &__el::before
     position: absolute
-    left: -20px
+    left: 10px
     top: 7px
     content: ''
     width: 8px
@@ -33,6 +37,7 @@ $link: #161b24
   &__link
     color: $link
     opacity: 0.5
+    white-space: nowrap
 
   &__link:hover
     color: $lightBlue

@@ -16,7 +16,10 @@
 <header class="header" id="header">
   <div class="header__wrap container">
     <div class="logo" id="logo"><a class="logo__link" href="#"><img class="logo__img logo__dark" src="images/logo.svg"><img class="logo__img logo__white" src="images/logo-white.svg"></a></div>
-    <nav class="navigation"><a class="navigation__link" href="#">Pricing</a><a class="navigation__link" href="#">Download</a><a class="navigation__link" href="#">Help</a><a class="navigation__link" href="#">English</a>
+    <nav class="navigation"><a class="navigation__link" href="#">Pricing</a><a class="navigation__link" href="#">Download</a><a class="navigation__link" href="#">Help</a>
+      <div class="dropdown"><span class="dropdown__active">English</span>
+        <div class="dropdown__menu"><a class="dropdown__link" href="#">English</a><a class="dropdown__link" href="#">Deutsch</a><a class="dropdown__link" href="#">Français</a><a class="dropdown__link" href="#">Türkçe</a></div>
+      </div>
     </nav><a class="button-transparent" href="#">Get SafeLine VPN</a>
     <div class="hamburger" id="hamburger"><span class="hamburger__el"></span><span class="hamburger__el"></span><span class="hamburger__el"></span></div>
   </div>
@@ -35,11 +38,10 @@
 <section class="section section-help">
   <div class="container">
     <h2 class="section__title">How can we help?</h2>
-    <form class="form form-reset">
-      <div class="form__field"><span class="form__field-icon icon search"></span>
-        <input class="form__input input" id="email" type="email" name="email" placeholder="Search">
-      </div>
-    </form>
+    <!--form.form.form-reset-->
+    <!--  div.form__field-->
+    <!--    span.form__field-icon.icon.search-->
+    <!--    input.form__input.input#email(type="email" name='email' placeholder='Search')-->
     <div class="rectangles white"><a class="rectangle" href="#"><span class="help-setting-up rectangle__icon icon"></span><span class="rectangle__title">Getting started / Setting up</span></a><a class="rectangle" href="#"><span class="help-billing rectangle__icon icon"></span><span class="rectangle__title">Billing and Accounts</span></a><a class="rectangle" href="#"><span class="help-troubleshooting rectangle__icon icon"></span><span class="rectangle__title">Troubleshooting</span></a><a class="rectangle" href="#"><span class="help-contact rectangle__icon icon"></span><span class="rectangle__title">Contact Support</span></a>
     </div>
   </div>
