@@ -48,6 +48,11 @@ const common = merge([
         template: PATH.source + '/pages/pricing/pricing.pug'
       }),
       new HtmlWebpackPlugin({
+        filename: 'pricing-2.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/pricing-2/pricing-2.pug'
+      }),
+      new HtmlWebpackPlugin({
         filename: 'reset.html',
         chunks: ['index', 'common'],
         template: PATH.source + '/pages/reset/reset.pug'

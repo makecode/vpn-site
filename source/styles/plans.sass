@@ -11,13 +11,13 @@ $border: #d4d6da
   justify-content: space-between
   align-items: center
 
-  +m(900)
+  +m($mobile)
     margin: 40px 0
     flex-direction: column
 
 .plan
   position: relative
-  padding: 15px 20px 20px 15px
+  padding: 10px
   width: 270px
   height: 216px
   border: 1px solid $border
@@ -28,10 +28,10 @@ $border: #d4d6da
   box-sizing: border-box
   z-index: 1
 
-  +m(1200)
+  +m($laptop)
     width: 32%
 
-  +m(900)
+  +m($mobile)
     width: 100%
     margin-bottom: 30px
 
@@ -63,9 +63,9 @@ $border: #d4d6da
     display: inline-block
     position: absolute
     padding: 0 25px
-    top: -16px
+    top: 0
     left: 50%
-    transform: translate(-50%)
+    transform: translate(-50%, -50%)
     height: 40px
     font-family: $fontBold
     line-height: 40px
@@ -112,7 +112,71 @@ $border: #d4d6da
       border-color: $blue
       background-image: url('~media/check-white.svg')
 
-
   &:first-child .plan__discount
     color: $text
     opacity: .25
+
+// PLANS 2
+.plans.four
+  padding-bottom: 100px
+  
+  +m($mobile)
+    padding-bottom: 0
+  
+  .plan
+    +m($laptop)
+      width: 24%
+      height: 236px
+
+    +m($mobile)
+      width: 100%
+
+    &__details
+      margin-top: 6px
+      font-size: 14px
+      color: #acb1bc
+
+    &__oldPrice
+      color: $yellow
+      text-decoration: line-through
+
+    &__promoText
+      width: 100%
+      display: none
+      position: absolute
+      padding: 15px 20px
+      left: 0
+      bottom: -20px
+      transform: translateY(100%)
+      background-color: #acb1bc
+      color: white
+      font-size: 14px
+
+      &.best
+        background-color: $green
+
+        &::after
+          border-color: transparent transparent $green transparent
+
+    &__promoText::after
+      display: inline-block
+      position: absolute
+      content: ''
+      top: -6px
+      left: 50%
+      transform: translateX(-50%)
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 6px 6px 6px;
+      border-color: transparent transparent #acb1bc transparent;
+
+    &.active
+      +m($mobile)
+        margin-bottom: 100px
+      
+      +m($small)
+        margin-bottom: 120px
+
+      .plan__promoText
+        display: inline-block

@@ -1,0 +1,45 @@
+.promo
+  height: 72px
+  background-color: $promoBg
+  color: white
+  font-size: 20px
+  font-family: $fontBold
+  
+  +m($mobile)
+    height: auto
+    padding: 20px 0
+    text-align: center
+
+  +m($small)
+    font-size: 16px
+
+  &__wrap
+    height: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+    +m($mobile)
+      flex-direction: column
+
+  &__counter
+    display: flex
+    flex-direction: row
+    align-items: center
+    font-size: 36px
+    color: $promoGold
+
+    +m($small)
+      margin-top: 10px
+      font-size: 24px
+
+  &__separator
+    display: inline-block
+    margin: 0 6px
+    color: white
+    font-size: 24px
+
+  &__link
+    color: $promoGold
+    text-decoration: underline

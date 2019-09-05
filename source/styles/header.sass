@@ -9,7 +9,7 @@
   z-index: $zHeader
   //overflow: hidden
 
-  +m(900)
+  +m($mobile)
     top: 0!important
 
   &__wrap
@@ -28,7 +28,7 @@
     opacity: 0
     z-index: 0
 
-    +m(900)
+    +m($mobile)
       display: none
 
 .header.fixed
@@ -51,5 +51,5 @@
   opacity: 1
   z-index: 1
 
-  +m(1040)
+  +m($tablet)
     right: 20px
