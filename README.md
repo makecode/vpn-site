@@ -1,6 +1,6 @@
 Structure
 =============
-Simple pages for Boolberry
+__[DEMO](https://makecode.github.io/vpn-site/)__
 
 `/source/` - thats where you write code.
 

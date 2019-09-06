@@ -126,10 +126,69 @@ $border: #d4d6da
   .plan
     +m($laptop)
       width: 24%
-      height: 236px
 
     +m($mobile)
       width: 100%
+      height: auto
+
+    &:first-child
+      .plan__discount
+        color: $green
+        opacity: 1
+
+    &:last-child
+      .plan__discount
+        color: $text
+        opacity: .25
+
+    &__content
+
+      +m($mobile)
+        padding-left: 40px
+        align-items: flex-start
+
+      +m(360)
+        padding-left: 14px
+
+    &__top
+      display: flex
+      flex-direction: column
+
+      +m($mobile)
+        display: flex
+        flex-direction: row
+        font-size: 16px
+
+    &__price
+      margin: 20px 4px 0
+
+      +m($mobile)
+        margin: 0 4px
+        font-size: 16px
+
+    &__label
+      +m($mobile)
+        display: none
+
+    &__checkbox
+      +m($mobile)
+        left: 12px
+        width: 24px
+        height: 24px
+
+      +m(360)
+        left: 5px
+        width: 14px
+        height: 14px
+
+    &__checkbox
+      +m($mobile)
+        top: 50%
+        transform: translateY(-50%)
+
+    &__discount
+      +m($mobile)
+        margin-top: 6px
 
     &__details
       margin-top: 6px
@@ -137,6 +196,8 @@ $border: #d4d6da
       color: #acb1bc
 
     &__oldPrice
+      display: inline-block
+      margin-right: 4px
       color: $yellow
       text-decoration: line-through
 
