@@ -1,0 +1,32 @@
+.countdown
+  display: flex
+  flex-direction: row
+  align-items: center
+  color: $promoGold
+  font-family: $fontBold
+
+  +m($small)
+    margin-top: 10px
+    font-size: 24px
+
+  &__element
+    position: relative
+    display: flex
+    flex-direction: column
+    text-align: center
+
+  &__value
+    font-size: 36px
+
+  &__title
+    font-size: 14px
+    color: white
+    font-family: $fontRegular
+
+  .separator
+    position: relative
+    top: -8px
+    display: inline-block
+    margin: 0 6px
+    color: white
+    font-size: 24px

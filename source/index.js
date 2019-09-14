@@ -1,5 +1,5 @@
 // libs
-import Glider from 'glider-js';
+// import Glider from 'glider-js';
 
 // styles import
 import 'ress';
@@ -17,6 +17,17 @@ $(document).ready(function() {
   const hamburger = document.getElementById('hamburger');
   const body = document.getElementById('body');
   const vawes = document.getElementById('vawes');
+  const downloadBtn = document.getElementById('download-btn');
+  const onScreen = document.getElementById('on-screen');
+
+  $(downloadBtn).on('click', function(e) {
+    e.preventDefault();
+    $(onScreen).addClass('visible');
+  });
+
+  $(onScreen).on('click', function() {
+    $(onScreen).removeClass('visible');
+  });
 
   // check if is mobile window size
   const checkMobile = () => {
@@ -71,12 +82,12 @@ $(document).ready(function() {
   };
 
   // run glider only for mobile on index page
-  const runSlider = () => {
-    const pageIsIndex = $(body).hasClass('index');
-    if (pageIsIndex && isMobile) {
-      initSlider();
-    }
-  };
+//   const runSlider = () => {
+//     const pageIsIndex = $(body).hasClass('index');
+//     if (pageIsIndex && isMobile) {
+//       initSlider();
+//     }
+//   };
 
   // show vawes SVG
   const showVawes = () => {
@@ -86,7 +97,7 @@ $(document).ready(function() {
   // run fuctions and listeners
   checkMobile();
   checkHeaderOffset();
-  runSlider();
+//   runSlider();
   setTimeout(showVawes, 1000);
   window.addEventListener('scroll', onScroll);
   window.addEventListener('resize', onResize);

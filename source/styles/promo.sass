@@ -1,56 +1,31 @@
 .promo
-  height: 72px
-  background-color: $promoBg
-  color: white
-  font-size: 20px
-  font-family: $fontBold
-  
-  +m($mobile)
-    height: auto
-    padding: 20px 0
-    text-align: center
-
-  +m($small)
-    font-size: 16px
 
   &__wrap
-    position: relative
-    height: 100%
     display: flex
     flex-direction: row
     justify-content: space-between
-    align-items: center
 
     +m($mobile)
-      flex-direction: column
+      justify-content: center
 
-  &__counter
+  &__left
     display: flex
-    flex-direction: row
-    align-items: center
-    font-size: 36px
-    color: $promoGold
+    flex-direction: column
+    text-align: left
+    margin-right: 20px
 
-    +m($small)
-      margin-top: 10px
-      font-size: 24px
+    +m($mobile)
+      margin-right: 0
+      justify-content: center
+      align-items: center
+      text-align: center
 
-  &__separator
-    display: inline-block
-    margin: 0 6px
-    color: white
-    font-size: 24px
-
-  &__link
-    color: $promoGold
-    text-decoration: underline
-
-  .pcmag
-    position: absolute
-    right: 0
-    bottom: 0
-    width: 48px
-    transform: translateY(100%)
-
+  &__right
     +m($mobile)
       display: none
+
+  h1
+    margin: 0
+
+  .countdown
+    margin-bottom: 20px

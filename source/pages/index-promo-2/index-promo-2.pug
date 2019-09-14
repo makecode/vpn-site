@@ -1,0 +1,13 @@
+extends ../base
+block vars
+  - var bodyClasses = 'index promo detected';
+block title
+  |SafeLine VPN
+block main
+  include ../_partials/detection
+  // end DETECTION
+  main.main
+    include ../_partials/section-hero-promo-2
+    // end SECTION HERO
+    include ../_partials/pre-footer
+    // end PRE-FOOTER

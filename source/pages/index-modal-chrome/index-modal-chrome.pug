@@ -1,0 +1,28 @@
+extends ../base
+block vars
+  - var bodyClasses = 'index detected';
+block title
+  |SafeLine VPN
+block main
+  include ../_partials/detection
+  // end DETECTION
+  include ../_partials/on-screen/on-screen-chrome
+  //end ON SCREEN
+  main.main
+    section.section.hero.row
+      div.hero__wrap.container
+        div.hero__left
+          h1.hero__title Access the Internet securely and without limits
+          include ../_partials/advantages
+          div.buttons
+            a(href='#').button#download-btn Download
+            a(href='#').link Start Free Trial
+        
+        div.hero__right
+          div.hero__screen
+            img(src=require('../../media/screen-full.png'))
+
+      include ../_partials/svg.html
+    // end SECTION HERO
+    include ../_partials/pre-footer
+    // end PRE-FOOTER

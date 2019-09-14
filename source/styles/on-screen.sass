@@ -1,0 +1,90 @@
+.on-screen
+  display: none
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background-color: rgba(black, 0.8)
+  z-index: 100
+
+  +m($mobile)
+    display: none!important
+
+  &.visible
+    display: block
+
+  &__list
+    position: absolute
+    display: flex
+    font-family: $fontMedium
+
+  &__el
+    color: white
+
+  &__arrow
+    display: inline-block
+    width: 64px
+    height: 90px
+    position: absolute
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjRweCIgaGVpZ2h0PSI5MHB4IiB2aWV3Qm94PSIwIDAgNjQgOTAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU1LjIgKDc4MTgxKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4KICAgIDx0aXRsZT5BcnJvdzwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxnIGlkPSJNb2NrdXBzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iMDMuMi1TYWZlQ2xlYW4tV2Vic2l0ZS0tLUluc3RydWN0aW9uIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTIuMDAwMDAwLCAtNzcxLjAwMDAwMCkiIGZpbGw9IiMwRUM0NzMiPgogICAgICAgICAgICA8cGF0aCBkPSJNOTYsODIxIEwxMTYsODIxIEw4NCw4NjEgTDUyLDgyMSBMNzIsODIxIEw3Miw3NzEgTDk2LDc3MSBMOTYsODIxIFoiIGlkPSJBcnJvdyI+PC9wYXRoPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+")
+
+  &__step
+    margin-right: 10px
+    width: 36px
+    height: 36px
+    line-height: 36px
+    text-align: center
+    display: inline-block
+    background-color: $green
+    border-radius: 50%
+    font-size: 20px
+
+  &__screenshot
+    margin-bottom: 20px
+
+.on-screen__container.chrome
+
+  .on-screen__arrow
+    bottom: 40px
+    left: 52px
+
+  .on-screen__list
+    bottom: 100px
+    left: 225px
+    flex-direction: row
+
+    +m($laptop)
+      left: 60px
+      bottom: 200px
+
+  .on-screen__el
+    width: 290px
+    margin-right: 60px
+
+    +m($laptop)
+      width: 250px
+      margin-right: 30px
+
+.on-screen__container.safari
+  .on-screen__arrow
+    top: 39px
+    right: 82px
+    transform: rotate(180deg)
+
+  .on-screen__list
+    right: 500px
+    top: 60px
+    flex-direction: column
+
+  .on-screen__el
+    display: flex
+    flex-direction: row
+    width: 260px
+    margin-bottom: 60px
+
+  .on-screen__text
+    position: relative
+    top: 40px
+    margin-left: 20px
+    white-space: nowrap

@@ -43,6 +43,36 @@ const common = merge([
         template: PATH.source + '/pages/index/index.pug'
       }),
       new HtmlWebpackPlugin({
+        filename: 'index-2.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/index-2/index-2.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'index-modal-chrome.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/index-modal-chrome/index-modal-chrome.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'index-modal-safari.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/index-modal-safari/index-modal-safari.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'index-promo-1.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/index-promo-1/index-promo-1.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'index-promo-2.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/index-promo-2/index-promo-2.pug'
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'index-promo-3.html',
+        chunks: ['index', 'common'],
+        template: PATH.source + '/pages/index-promo-3/index-promo-3.pug'
+      }),
+      new HtmlWebpackPlugin({
         filename: 'pricing.html',
         chunks: ['index', 'common'],
         template: PATH.source + '/pages/pricing/pricing.pug'

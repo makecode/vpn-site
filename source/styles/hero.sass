@@ -5,6 +5,88 @@
   text-align: center
   overflow: hidden
 
+  // styles for layout on page index-2
+  &.row
+    padding-bottom: 100px
+
+    .hero__wrap
+      flex-direction: row
+      justify-content: space-between
+      text-align: left
+
+      +m($mobile)
+        flex-direction: column
+        text-align: center
+
+    .hero__left
+      margin-right: 20px
+      max-width: 500px
+
+      +m($mobile)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        max-width: 100%
+        margin-right: 0
+        margin-bottom: 30px
+
+    .hero__screen
+      margin-top: 0
+
+    .hero__vawes
+      bottom: -100px
+
+      +m($mobile)
+        bottom: 0
+
+    .advantages
+      flex-wrap: wrap
+
+      +m($laptop)
+        flex-direction: column
+
+    .advantages__el
+      margin-bottom: 10px
+
+    .buttons
+      margin-top: 20px
+      flex-direction: row
+      align-items: center
+
+      +m($mobile)
+        margin-top: 40px
+        flex-direction: column
+
+    .link
+      margin-left: 20px
+      margin-top: 0
+
+      +m($mobile)
+        margin-top: 20px
+        margin-left: 0
+
+  &.promo
+    padding: 120px 0
+    background-image: url('~media/banner-blue.png')
+    background-size: cover
+    background-position: bottom
+    color: white
+
+    +m($mobile)
+      padding: 60px 0
+      background-size: auto
+
+    h1
+      max-width: 450px
+  
+    p
+      margin: 10px 0
+
+    .button
+      margin: 20px 0
+      background-color: $colorOrange
+
   &__wrap
     position: relative
     display: flex
@@ -15,6 +97,9 @@
   &__title
     margin: 0 auto
     max-width: 770px
+
+  &__text
+    font-size: 18px
 
   &__screen
     max-width: 570px
