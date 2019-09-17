@@ -1,6 +1,8 @@
 // libs
 // import Glider from 'glider-js';
 
+import Countdown from './countdown';
+
 // styles import
 import 'ress';
 import './styles/_index.sass';
@@ -82,22 +84,31 @@ $(document).ready(function() {
   };
 
   // run glider only for mobile on index page
-//   const runSlider = () => {
-//     const pageIsIndex = $(body).hasClass('index');
-//     if (pageIsIndex && isMobile) {
-//       initSlider();
-//     }
-//   };
+  const runSlider = () => {
+    const pageIsIndex = $(body).hasClass('index');
+    if (pageIsIndex && isMobile) {
+      initSlider();
+    }
+  };
 
   // show vawes SVG
   const showVawes = () => {
     $(vawes).fadeIn(2000);
   };
 
+  const runCountdown = () => {
+    const countdownContainer = $('#countdown');
+
+    if (countdownContainer) {
+      new Countdown(countdownContainer);
+    }
+  };
+
   // run fuctions and listeners
   checkMobile();
   checkHeaderOffset();
 //   runSlider();
+  runCountdown();
   setTimeout(showVawes, 1000);
   window.addEventListener('scroll', onScroll);
   window.addEventListener('resize', onResize);
