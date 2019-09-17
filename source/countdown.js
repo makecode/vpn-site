@@ -25,6 +25,10 @@ class Countdown {
     this.checkCookie();
   };
 
+  /**
+   * add zero before value if this value < 10
+   * "3" => "03"
+   */
   prettifyValue(value) {
     return value < 10 ? `0${value}` : value;
   }

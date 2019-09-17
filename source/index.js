@@ -99,7 +99,7 @@ $(document).ready(function() {
   const runCountdown = () => {
     const countdownContainer = $('#countdown');
 
-    if (countdownContainer) {
+    if (countdownContainer.length) {
       new Countdown(countdownContainer);
     }
   };
