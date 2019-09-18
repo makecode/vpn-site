@@ -75,11 +75,9 @@ class Countdown {
         this.distance = this.distance - SECOND;
       } else {
         clearInterval(this.timer);
-        this.distance = 0;
+        $(this.counter).fadeOut();
       }
     }, SECOND)
-
-    console.log('run timer');
   }
 }
 
