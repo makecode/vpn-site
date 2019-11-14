@@ -7,7 +7,7 @@
   background-color: white
   border-bottom: 1px solid #DDDEDF
   z-index: $zHeader
-  overflow-x: hidden
+  // overflow-x: hidden
   //overflow: hidden
 
   +m($mobile)
@@ -22,7 +22,7 @@
 
   .button-transparent
     position: absolute
-    right: -200px
+    right: 0
     top: 50%
     transform: translateY(-50%)
     transition: $transition
@@ -48,7 +48,6 @@
     display: none
 
 .header.fixed .button-transparent
-  right: 0
   opacity: 1
   z-index: 1
 
